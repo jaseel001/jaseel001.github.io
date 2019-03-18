@@ -9,150 +9,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
   <!-- <link rel="shortcut icon" type="image/png" href="/favicon.png"/> -->
-  <style type="text/css">
-    body {
-      background-color: #f5f7f8;
-      font-family: 'Roboto', sans-serif;
-    }
-    .navbar {
-      background-color: #563d7c;
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      z-index: 1071;
-    }
-    .navbar-dark .navbar-nav .nav-link {
-      color: rgba(255,255,255,.8);
-    }
-    .navbar-dark .navbar-nav .nav-link:hover {
-      color: rgba(255,255,255,1);
-    }
-    .about {
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      background-color: #fff;
-    }
-    .prof-pic img {
-      width: 150px;
-      height: 150px;
-      padding: 5px;
-      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    }
-    .prof-pic figcaption {
-      color: #0A2032;
-    }
-    .prof-desc {
-      color: #606060;
-    }
-    .about button {
-      background: #EC5252;
-      border: none;
-      color: #fff;
-      padding: 7px 30px;
-      border-radius: 2px;
-      margin: 0px 10px 5px 10px;
-      transition-property: background;
-      transition-duration: .5s;
-      transition-timing-function: linear;
-    }
-    .about button:hover {
-      background-color: #521822;
-    }
-    .title {
-      color: #3c3c3c;
-      font-size: 1.5rem;
-      text-align: center;
-      padding: 25px 0px 10px 0px;
-    }
-    .experiance .duration {
-      padding-top: 10px;
-    }
-    .experiance .description {
-      color: #606060;
-      text-align: left;
-    }
-    .skill-tags {
-      text-align: left;
-    }
-    .skill-tags span {
-      background-color: #8FBC8F;
-      color: #fff;
-      display: inline-block;
-      padding: 1px 7px;
-      margin-right: 5px;
-      border-radius: 2px;
-      margin-bottom: 7px;
-    }
-    .education-title {
-      background-color: #563d7c;
-      color: #fff;
-      padding: 0px 20px;
-      height:60px;
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-    }
-    .inner-div {
-      background-color: #fff;
-      height: 100%;
-      box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
-    }
-    .education-details {
-      padding:15px 20px;
-    }
-    .education-details p{
-      color: #563d7c;
-      margin-bottom: 0;
-      font-weight: 500;
-    }
-    .education-details p.desc {
-      font-weight: 100;
-      color: #606060;
-      padding-top: 30px;
-    }
-    .education-details a {
-      color: #EC5252;
-    }
-    .skills, .education {
-      margin-bottom: 15px;
-    }
-    .education:nth-child(1),
-    .skills:nth-child(4n+1) {
-      padding-right: 10px;
-    }
-    .education:nth-child(2),
-    .skills:nth-child(4n+2),
-    .skills:nth-child(4n+3) {
-      padding-right: 5px;
-      padding-left: 5px;
-    }
-    .education:nth-child(3),
-    .skills:nth-child(4n+4) {
-      padding-left: 10px;
-    }
-    .skills img {
-      height: 150px;
-      width:100%;
-    }
-    .skills p {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 0;
-      font-weight: 500;
-    }
-    .skills p.duration {
-      margin-bottom: 20px;
-      margin-top: 0;
-      color:#606060;
-      font-weight: 100;
-    }
-    .contact {
-      background-color: #d0b2ff;
-    }
-    .contact a {
-      color: #0A2032;
-    }
-  </style>
 </head>
 <body>
 
@@ -185,13 +43,13 @@
 <div class="container">
   <div class="jumbotron about text-center p-4" id="about">
     <figure class="figure prof-pic">
-      <img src="https://res.cloudinary.com/hemb7ufr3/image/upload/h_150,c_fit/Categories/K_girlCharacter_catHero.jpg" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+      <img src="https://lh3.googleusercontent.com/a-/AAuE7mASOZr8SBxmftse7agUc0qqX-iCd1aZ3EazNH-9HA=s96" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
       <figcaption class="figure-caption font-weight-bold"><h3>First Name Second Name</h3>JavaScript Developer</figcaption>
     </figure>
     <p class="prof-desc">I'm a Javascript developer with 3 years and 9 months of experience in building best in class web applications. As a developer I'm constantly learning new things & always eager to apply my knowledge.</p>
     <div class="buttons">
-      <button>Download CV</button>
-      <button>Contact Me</button>
+      <a href="jaseelcv.pdf" target="_blank" download><button>Download CV</button></a>
+      <a href="#contact"><button>Contact Me</button></a>
     </div>
   </div>
   <h1 class="title" id="experiance">Experiance</h1>
@@ -203,7 +61,7 @@
   </div>
   <h1 class="title" id="education">Education/Certifications</h1>
   <div class="row no-gutters">
-    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 education">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 education">
       <div class="inner-div">
         <div class="education-title">
           BTech
@@ -216,10 +74,10 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 education">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 education">
       <div class="inner-div">
         <div class="education-title">
-          Information Visualization: Programming with D3.js
+          Programming with D3.js
         </div>
         <div class="education-details">
           <p>Coursera</p>
@@ -229,7 +87,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 education">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 education">
       <div class="inner-div">
         <div class="education-title">
           Fullstack Development(Ongoing)
@@ -244,7 +102,7 @@
   </div>
   <h1 class="title" id="skills">Skills</h1>
   <div class="row no-gutters">
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/html5.jpeg">
@@ -253,7 +111,7 @@
         <p class="duration">(3+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/css.jpg">
@@ -262,7 +120,7 @@
         <p class="duration">(3+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/js.jpeg">
@@ -271,7 +129,7 @@
         <p class="duration">(3+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/angular.svg">
@@ -280,7 +138,7 @@
         <p class="duration">(3+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/ts.jpg">
@@ -289,7 +147,7 @@
         <p class="duration">(2+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/bs.jpeg">
@@ -298,7 +156,7 @@
         <p class="duration">(3+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/jq.png">
@@ -307,7 +165,7 @@
         <p class="duration">(3+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/vue.jpg">
@@ -316,7 +174,7 @@
         <p class="duration">(6months+)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/nodewhite.png">
@@ -325,7 +183,7 @@
         <p class="duration">(6months+)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/sass.jpg">
@@ -334,7 +192,7 @@
         <p class="duration">(1+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/less_logo.png">
@@ -343,7 +201,7 @@
         <p class="duration">(2+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/git.png">
@@ -352,7 +210,7 @@
         <p class="duration">(3+years)</p>
       </div>
     </div>
-    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 skills">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 skills">
       <div class="inner-div">
         <div class="banner">
           <img src="images/linux.png">
@@ -371,7 +229,7 @@
     <p><a href="tel:+919744148412"><img src="images/icons8-touchscreen-24.png"></a></p>
     <p><a href="tel:+919744148412">+919744148412</a></p>
     <p><img src="images/icons8-home-address-24.png"></p>
-    <p>Asnas,Manakkayi,Kayani(PO),Mattannur,<br>Kearala,India-670702</p>
+    <p>Asnas,Manakkayi,Kayani(PO)<br>,Mattannur,Kearala,<br>India-670702</p>
   </div>
 </div>
 
